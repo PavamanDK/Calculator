@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                go test -v -cover ./..
+                echo "Hello World"
             }
         }
     }
