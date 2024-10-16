@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Compile') {
             steps{
+                sh 'ls -ltrha'
                 sh 'go build'
+                sh 'ls -ltrha'
             }
         }
     }
