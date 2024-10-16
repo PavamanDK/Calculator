@@ -9,7 +9,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'echo "Hello World"'
+                echo "Welcome to my first CICD pipeline"
+            }
+        }
+        stage('Compile') {
+            steps{
+                sh 'go build'
             }
         }
     }
