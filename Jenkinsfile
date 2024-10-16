@@ -20,5 +20,10 @@ pipeline {
                 sh 'ls -ltrha'
             }
         }
+        stage('Test') {
+            steps{
+                sh 'go test'
+            }
+        }
     }
 }
