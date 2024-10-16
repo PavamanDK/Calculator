@@ -15,7 +15,7 @@ pipeline {
         stage('Compile') {
             steps{
                 sh 'ls -ltrha'
-                sh 'go mod init github.com/pavaman'
+                #sh 'go mod init github.com/pavaman'
                 sh 'go build'
                 sh 'ls -ltrha'
             }
